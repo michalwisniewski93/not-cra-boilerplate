@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Funnel Display', sans-serif;
+}
+
+.app {
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+.app .info {
+    font-family: 'Funnel Display', sans-serif;
+    color: white;
+    background-color: rgb(10, 159, 10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    background-color: rgb(3, 40, 24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__title {
+    font-family: 'Funnel Display', sans-serif;
+    font-size: 35px;
+    color: rgb(1, 226, 95);
+}
+
+.loginForm h1 {
+    font-size: 24px;
+    padding-left: 5px;
+}
+
+.loginForm h2 {
+    font-size: 14px;
+    color: red;
+    font-family: 'Funnel Display', sans-serif;
+    padding-left: 5px;
+}
+
+.loginForm form {
+    margin-left: 5px;
+}
+
+.loginForm form label, .loginForm form input {
+    color: grey;
+    font-size: 22px;
+    font-family: 'Funnel Display', sans-serif;
+    display: block;
+    font-weight: 100;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.loginForm form button {
+    color: rgb(1, 226, 95);
+    background-color: rgb(3, 40, 24);
+    padding: 10px;
+    font-family: 'Funnel Display', sans-serif;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.loginForm form button:hover {
+    background-color: black;
+}
+
+
+
+button.logout {
+    color: rgb(1, 226, 95);
+    background-color: black;
+    padding: 10px;
+    font-family: 'Funnel Display', sans-serif;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+button.logout:hover {
+    background-color: black;
+}
+
+h1.subpage {
+    font-size: 24px;
+    padding-left: 5px;
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.mainMenu {
+    font-family: 'Funnel Display', sans-serif;
+    color: black;
+    background-color: rgb(1, 226, 95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+ul.mainMenu__list {
+    list-style: none;
+}
+
+.mainMenu__list li a {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.mainMenu__list li a:hover {
+    background-color: rgb(11, 98, 60);
+    color: white;
+}
+
+
+
+button.returntomainmenu, button.adddoctor {
+    color: rgb(1, 226, 95);
+    background-color: black;
+    padding: 10px;
+    font-family: 'Funnel Display', sans-serif;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button.returntomainmenu:hover {
+    background-color: black;
+}
+
+.doctorsProfiles {
+    display: flex;
+    flex-direction: row;
+
+    padding: 5px;
+    gap: 5px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.doctorsProfiles .doctorsProfiles__item {
+    flex: 1 1 48%;
+    padding-left: 5px;
+    border: 3px dotted rgb(11, 98, 60);
+    border-radius: 7px;
+    padding-bottom: 10px;
+    max-width: 50%;
+}
+
+@media (max-width: 500px) {
+    .doctorsProfiles {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .doctorsProfiles .doctorsProfiles__item {
+        padding-left: 0px;
+        max-width: 100%;
+    }
+}
+
+.doctorsProfiles .doctorsProfiles__item button.edit {
+    color: rgb(255, 255, 255);
+    background-color: rgb(70, 105, 212);
+    padding: 10px;
+    font-family: 'Funnel Display', sans-serif;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.doctorsProfiles .doctorsProfiles__item button.delete {
+    color: rgb(255, 255, 255);
+    background-color: rgb(164, 22, 22);
+    padding: 10px;
+    font-family: 'Funnel Display', sans-serif;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.doctorsProfiles .doctorsProfiles__item button.setAsActive {
+    color: rgb(1, 226, 95);
+    background-color: black;
+    padding: 10px;
+    font-family: 'Funnel Display', sans-serif;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+
+
+
+.sitecontent form {
+    margin-left: 5px;
+}
+
+.sitecontent form label {
+    color: black;
+    font-size: 16px;
+    font-family: 'Funnel Display', sans-serif;
+    display: block;
+    font-weight: 100;
+    margin-top: 5px;
+
+}
+
+.sitecontent form input {
+    color: grey;
+    font-size: 22px;
+    font-family: 'Funnel Display', sans-serif;
+    display: block;
+    font-weight: 100;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.sitecontent form button {
+    color: rgb(1, 226, 95);
+    background-color: rgb(3, 40, 24);
+    padding: 10px;
+    font-family: 'Funnel Display', sans-serif;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.sitecontent form button:hover {
+    background-color: black;
+}
+
+@media(max-width: 700px) {
+    .sitecontent form input {
+        width: 95%;
+    }
+}
+
+.sitecontent input {
+    color: grey;
+    font-size: 22px;
+    font-family: 'Funnel Display', sans-serif;
+    display: block;
+    font-weight: 100;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: block;
+}
+
+.sitecontent label {
+    color: black;
+    font-size: 16px;
+    font-family: 'Funnel Display', sans-serif;
+    display: block;
+    font-weight: 100;
+    margin-top: 5px;
+    display: block;
+}
+
+.sitecontent button {
+    color: rgb(1, 226, 95);
+    background-color: black;
+    padding: 10px;
+    font-family: 'Funnel Display', sans-serif;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 5px;
+
+}
+
+@media(max-width: 500px) {
+    .sitecontent input {
+        width: 95%;
+    }
+}

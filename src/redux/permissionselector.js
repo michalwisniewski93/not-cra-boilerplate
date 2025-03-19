@@ -1,0 +1,1 @@
+export const getPermissionInfo = (state) => state.permission
